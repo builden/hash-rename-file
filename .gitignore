@@ -76,3 +76,4 @@ $RECYCLE.BIN/
 
 # temp directory
 tmp-*
+test/hash-rename-file-test.js

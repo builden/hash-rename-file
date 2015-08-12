@@ -1,6 +1,6 @@
 {
   "name": "hash-rename-file",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "hash and rename file, support (tp, fnt ...)",
   "main": "lib/hash-rename-file.js",
   "scripts": {
