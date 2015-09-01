@@ -36,4 +36,16 @@ describe('hash-rename-file', function () {
       done();
     });
   });
+
+  it('hash spine file', function (done) {
+    hrf('test/res/spine/*.*', tmpPath, {
+      type: 'spine', base: 'test/res'
+      }, function(err) {
+        expect(err).not.exist;
+        expect(fs.existsSync(tmpPath + '/spine/boss2_5c892bd.atlas')).to.be.ok;
+        expect(fs.existsSync(tmpPath + '/spine/boss2_5c892bd.png')).to.be.ok;
+        expect(fs.existsSync(tmpPath + '/spine/boss2_5c892bd.json')).to.be.ok;
+        done();
+      });
+  });
 });
